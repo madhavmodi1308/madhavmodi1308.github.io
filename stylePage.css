@@ -1,4 +1,4 @@
-<style>
+/*<style>*/
 :root{
       --col:white;
     }
@@ -7,7 +7,7 @@ body {
   margin: 0;
 }
 
-h1{
+.H{
 	color: white;
 	font-family: cursive;
 	font-size: 40px;
@@ -176,11 +176,13 @@ img.avatar {
       margin:5px;
       border:2px solid grey;
       height: 150px;
+      /*overflow: hidden;*/
     }
     .founder div img{
-      width: 150px;
-      height:150px;
-      border-radius: 75px ;
+      object-fit: cover;
+      width: 130px;
+      height:130px;
+      border-radius: 65px;
       float:left;
       margin-right: 5px; 
     }
@@ -189,6 +191,9 @@ img.avatar {
       margin-left: 5px;
     }
     @media (max-width: 650px){
+      .founder div{
+        height: auto;
+      }
       .HnF{
         flex-direction: column;
         width: auto;
@@ -201,4 +206,4 @@ img.avatar {
         outline-offset: -15px;
       }
     }
-    </style>
+    /*</style>*/
